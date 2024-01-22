@@ -1,0 +1,14 @@
+  git config --global user.email "warisa.thia@mail.kmutt.ac.th"
+  git config --global user.name "WarisaTT"
+
+git clone [link] 
+  npm install
+  npm test
+
+  git status
+  git add .
+  git commit -m "comment"
+  git push -u origin main
+
+git fetch
+git pull
