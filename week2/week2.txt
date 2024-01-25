@@ -1,0 +1,3 @@
+>> spread Operator (...)
+On object: ถ้าใส่มากกว่า 1 object มันจะ merge และ retake ค่าที่ซ้ำให้
+On array: ถ้าใส่มากกว่า 1 array มันจะ merge แต่จะไม่ retake ค่าที่ซ้ำให้ จะใส่ไปทั้ง 2 ตัวเลย 
