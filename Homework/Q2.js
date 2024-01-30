@@ -10,3 +10,8 @@
 
 // console.log(typeof num); // Number
 
+let numString = '65117'
+let num = Number(numString)
+
+console.log(typeof num)
+
