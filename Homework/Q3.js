@@ -6,7 +6,26 @@
 
 // // XXXXX is your code let a = 5, b = 10;
 
-// XXXXX = [a, b]; console.log(a); // 10 
+// XXXXX = [a, b]; 
+
+// console.log(a); // 10 
 
 // console.log(b); // 5
+// let a = 5, b = 10
+
+// [b, a] = [a, b]
+
+// console.log(a); // 10 
+
+// console.log(b); // 5
+
+let a = 5, b = 10; //????? ทำไมต้องมี ;
+
+[b, a] = [a, b]
+
+console.log(a) // 10 
+console.log(b) // 5
+
+
+
 

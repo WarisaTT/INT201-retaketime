@@ -14,3 +14,15 @@
 
 // {name: "Joy ", surname: “Stein”}
 
+let mixedArray = [42, "hello", {name: 'Joe', surname: 'Doe'}, true,56,false, {name: 'John', surname: 'Smith'}, {name: 'Joy', surname: 'Stein'}];
+
+function checkObj(arr){
+    arr.forEach((element) => {
+        if (typeof element === 'object' && element !== null && !Array.isArray(element)){
+            console.log(element)
+        }
+        
+    });
+}
+
+console.log(checkObj(mixedArray))
