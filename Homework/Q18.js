@@ -22,3 +22,21 @@
 
 // 68 Invalid mode. Please use "FtoC" or "CtoF"
 
+function convertTemperature(temperature, mode) {
+    if (mode === 'FtoC') {
+        // Fahrenheit to Celsius: (temperature - 32) * 5/9
+        return (temperature - 32) * 5/9;
+    } else if (mode === 'CtoF') {
+        // Celsius to Fahrenheit: (temperature * 9/5) + 32
+        return (temperature * 9/5) + 32;
+    } else {
+        return 'Invalid mode. Please use "FtoC" or "CtoF"';
+    }
+}
+
+// เรียกใช้ convertTemperature และแสดงผลลัพธ์
+console.log(convertTemperature(68, 'FtoC')); // Output: 20
+console.log(convertTemperature(20, 'CtoF')); // Output: 68
+console.log(convertTemperature(100, 'Unknown')); // Output: Invalid mode. Please use "FtoC" or "CtoF"
+
+

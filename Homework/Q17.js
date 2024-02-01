@@ -2,7 +2,8 @@
 
 // Instruction:
 
-// - Create a function calculateGrade(scores) that takes an array of numerical scores and returns the corresponding letter grade (A, B, C, D, or F) based on the average score.
+// - Create a function calculateGrade(scores) that takes an array of numerical scores 
+// and returns the corresponding letter grade (A, B, C, D, or F) based on the average score.
 
 // 17.1 Calculate the average score.
 
@@ -29,3 +30,30 @@
 // output 
 
 // B
+
+function calculateGrade(scores) {
+    // 17.1 คำนวณคะแนนเฉลี่ย
+    const averageScore = calculateAverage(scores);
+
+    // 17.2 กำหนดเกรดตามคะแนนเฉลี่ย
+    if (averageScore >= 90 && averageScore <= 100) {
+        return 'A';
+    } else if (averageScore >= 80 && averageScore <= 89) {
+        return 'B';
+    } else if (averageScore >= 70 && averageScore <= 79) {
+        return 'C';
+    } else if (averageScore >= 60 && averageScore <= 69) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+
+// ฟังก์ชันสำหรับคำนวณคะแนนเฉลี่ย
+function calculateAverage(scores) {
+    const sum = scores.reduce((total, score) => total + score, 0);
+    return sum / scores.length;
+}
+
+// เรียกใช้ calculateGrade และแสดงผลลัพธ์
+console.log(calculateGrade([80, 95, 90, 70, 100]))
